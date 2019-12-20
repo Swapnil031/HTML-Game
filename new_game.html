@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="gameStyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="code.js"></script>
+</head>
+<body onload="startGame()">
+	<div id="rules">
+		<h4><b>Rules:</b></h4>
+		<ul>
+			<li>Avoid the obstacles.</li>
+			<li>Don't touch the boundaries.</li>
+			<li>Use the controllers to move the box.</li>
+		</ul>
+	</div>
+	<div id="controller">		
+		<button onmousedown="moveup()" onmouseup="stopMove()" ontouchstart="moveup()">UP</button><br>
+		<button onmousedown="moveleft()" onmouseup="stopMove()" ontouchstart="moveleft()">LEFT</button>
+		<button onmousedown="moveright()" onmouseup="stopMove()" ontouchstart="moveright()">RIGHT</button><br>
+		<button onmousedown="movedown()" onmouseup="stopMove()" ontouchstart="movedown()">DOWN</button>
+
+		<div>
+			<h3>Score: </h3>
+		</div>
+	</div>
+	<div id="footer">
+		<p>Copyright <span class="fa fa-copyright"></span> of myGames.</p>
+	</div>
+</body>
+</html>
